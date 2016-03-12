@@ -1,0 +1,85 @@
+@import "var";
+body {
+  font-size: 1.2rem;
+  background: $bg;
+  font-family: $fontFamily;
+}
+
+a {
+  transition: all .3s ease-in-out;
+}
+
+.text-h0{
+  font-size: $fs-22;
+  color: $fc-333;
+}
+
+.text-h1 {
+  font-size: $fs-16;
+  color: $fc-333;
+}
+
+.text-h2 {
+  @include intercept;
+  font-size: $fs-14;
+  color: $fc-333;
+  transition: all .3s ease-in-out;
+  &:hover {
+    color: $globalColorHover;
+  }
+}
+
+.text-h3 {
+  @include intercept;
+  font-size: $fs-12;
+  color: $fc-999;
+}
+
+.text-url {
+  font-size: $fs-12;
+  color: $globalColor1;
+  &:hover {
+    color: $globalColor1Hover;
+  }
+}
+
+.btn-default{
+  display: block;
+  margin: 20px auto;
+  padding: 0 20px;
+  width: 130px;
+  height: 30px;
+  line-height: 30px;
+  font-size: $fs-14;
+  border-radius: 15px;
+  background: $globalColor;
+  color: $fc-fff;
+  text-align: center;
+
+  &:hover{
+    background: $globalColorHover;
+  }
+}
+
+//隐藏乐语悬浮按钮
+#doyoo_panel {
+  display: none !important;
+}
+
+#qiao-wrap {
+  display: none !important;
+}
+
+//loading
+.loading-box {
+  width: 100%;
+  text-align: center;
+  .loading {
+    display: inline-block;
+    margin: 0 auto;
+    height: 368px;
+    line-height: 368px;
+    font-size: 50px;
+    color: #666;
+  }
+}

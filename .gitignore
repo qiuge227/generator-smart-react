@@ -1,0 +1,9 @@
+node_modules
+bower_components
+.DS_Store
+*.log
+src/common/config.js
+src/components/common/base/config.static.scss
+.sass-cache
+.idea
+public/
